@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorActivatedHighlight"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonNovaFraseID"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:layout_marginBottom="447dp"
+        android:text="Nova Frase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textNovaFraseID"
+        android:layout_width="200dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="368dp"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNovaFraseID"
+        app:layout_constraintVertical_bias="0.043" />
+</android.support.constraint.ConstraintLayout>

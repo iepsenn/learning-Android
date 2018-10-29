@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preco_alcool"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preco_gasol"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <EditText
+        android:id="@+id/precoAlcoolID"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_caixaTexto"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <EditText
+        android:id="@+id/precoGasolinaID"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_caixaTexto"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <Button
+        android:id="@+id/botaoVerificarID"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="@string/verificarButton"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <TextView
+        android:id="@+id/resultadoID"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="370dp" />
+</android.support.constraint.ConstraintLayout>

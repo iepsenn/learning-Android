@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cachorro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="59dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="Digite a idade do seu cachorro, para descobrir a idade dele em anos humanos"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/caixaTextoID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/caixaTextoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonDescobrirIdadeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/descobrir_idade"
+        app:layout_constraintBottom_toTopOf="@+id/textDescobrirIdadeID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caixaTextoID" />
+
+    <TextView
+        android:id="@+id/textDescobrirIdadeID"
+        android:layout_width="208dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDescobrirIdadeID" />
+</android.support.constraint.ConstraintLayout>
