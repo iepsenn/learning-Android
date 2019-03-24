@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">YoutubeAPI</string>
+    <string name="player_error">ERRO AO INICIALIZAR API</string>
+</resources>
